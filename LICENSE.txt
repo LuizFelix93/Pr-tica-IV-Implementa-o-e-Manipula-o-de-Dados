@@ -1,0 +1,19 @@
+LICENÇA ACADÊMICA - PROJETO SGBU
+
+Este projeto foi desenvolvido como parte do curso de Analise e desenvolvimento de sistemas na 
+Instituição de Positivo no ano de 2025.
+
+DIREITOS DE USO:
+- Este projeto pode ser usado para fins educacionais
+- Pode ser copiado e modificado para aprendizado
+- Deve ser citado o autor original em trabalhos derivados
+
+RESTRIÇÕES:
+- Não pode ser usado para fins comerciais sem autorização
+- Não pode ser apresentado como trabalho próprio por terceiros
+- Deve manter esta notificação de licença em cópias
+
+AUTOR: Luiz Felix da Silva Filho
+INSTITUIÇÃO: Instittuição de ensino Positivo
+DATA: 2025
+CURSO: Analise e desenvolvimento de sistemas
