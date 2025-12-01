@@ -1,4 +1,4 @@
-# Pr-tica-IV-Implementa-o-e-Manipula-o-de-Dados
+# Pratica-IV-Implemento-e-Manipulação-de-Dados
 # 📚 Sistema de Gestão de Bibliotecas Universitárias (SGBU)
 
 ## 📋 Sobre o Projeto
