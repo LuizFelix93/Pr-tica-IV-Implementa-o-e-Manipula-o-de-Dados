@@ -1,0 +1,6 @@
+"codigo_emprestimo,codigo_usuario,codigo_exemplar,data_retirada,data_devolucao_prevista,data_devolucao_real,status"
+"1,2,3,2024-05-01,2024-06-01,,Ativo"
+"2,1,4,2024-05-10,2024-05-25,2024-05-25,Devolvido"
+"3,3,1,2024-04-15,2024-04-30,2024-04-30,Devolvido"
+"4,4,2,2024-04-01,2024-04-16,2024-04-16,Devolvido"
+"5,8,5,2024-05-05,2024-05-20,,Ativo"

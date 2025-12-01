@@ -1,0 +1,6 @@
+"codigo_usuario,nome,telefone,email,categoria,data_cadastro,status"
+"1,Maria Silva Oliveira,11999998888,maria.silva@universidade.edu.br,Aluno,2023-01-15,Ativo"
+"2,João Pedro Santos,11988887777,joao.santos@universidade.edu.br,Professor,2022-08-20,Ativo"
+"3,Ana Clara Oliveira,11977776666,ana.oliveira@universidade.edu.br,Funcionário,2023-03-10,Ativo"
+"4,Carlos Eduardo Mendes,11966665555,carlos.mendes@universidade.edu.br,Aluno,2023-05-22,Ativo"
+"5,Fernanda Lima Costa,11955554444,fernanda.costa@universidade.edu.br,Professor,2021-11-30,Ativo"

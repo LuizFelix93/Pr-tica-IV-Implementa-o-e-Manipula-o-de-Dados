@@ -1,0 +1,6 @@
+"codigo_exemplar,isbn,data_aquisicao,status,localizacao,observacoes"
+"1,9788532500783,2023-01-15,Disponível,A3,"
+"2,9788532500783,2023-02-20,Disponível,A3,"
+"3,9788535911243,2023-03-10,Emprestado,B1,"
+"4,9788535909554,2023-04-05,Disponível,C2,"
+"5,9788535914848,2023-05-12,Manutenção,D4,Páginas soltas"
