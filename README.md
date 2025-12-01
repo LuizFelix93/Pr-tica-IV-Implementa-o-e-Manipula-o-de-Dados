@@ -1,5 +1,7 @@
 📚 SGBU - Sistema de Gestão de Bibliotecas Universitárias
+
 📋 Sobre o Projeto
+
 Sistema completo para gerenciamento de bibliotecas universitárias, implementado com banco de dados relacional (PostgreSQL/MySQL) seguindo as melhores práticas de modelagem de dados.
 
 🏗️ Modelagem do Banco
@@ -36,7 +38,6 @@ bash
 # Clone o repositório
 git clone https://github.com/seu-usuario/SGBU.git
 cd SGBU
-
 # Execute os scripts SQL
 psql -U seu_usuario -d sgbiblioteca -f database/schema.sql
 psql -U seu_usuario -d sgbiblioteca -f database/inserts.sql
