@@ -1,9 +1,11 @@
 📚 Sistema de Gestão de Bibliotecas Universitárias (SGBU)
 
 📋 Sobre o Projeto
+
 Implementação completa de um sistema de gestão bibliotecária utilizando PostgreSQL/MySQL, com modelagem normalizada (3FN) e scripts SQL para operações CRUD.
 
 🏗️ Modelagem
+
 Modelo Entidade-Relacionamento (DER) completo
 
 Normalizado até 3ª Forma Normal (3FN)
@@ -11,6 +13,7 @@ Normalizado até 3ª Forma Normal (3FN)
 8 tabelas principais com relacionamentos bem definidos
 
 🛠️ Tecnologias Utilizadas
+
 PostgreSQL 14+ / MySQL 8+
 
 SQL (DDL, DML, DQL, DCL)
@@ -20,7 +23,7 @@ Git e GitHub para versionamento
 Mermaid.js para documentação
 
 📁 Estrutura do Projeto
-text
+
 SGBU/
 ├── database/
 │   ├── schema.sql        # Criação do banco e tabelas
@@ -33,6 +36,7 @@ SGBU/
 └── README.md           # Este arquivo
 
 🚀 Como Executar
+
 1. Configuração do Banco
 sql
 -- PostgreSQL
@@ -49,6 +53,7 @@ psql -U postgres -d sgbiblioteca -f database/schema.sql
 psql -U postgres -d sgbiblioteca -f database/inserts.sql
 
 🔍 Principais Funcionalidades
+
 ✅ Cadastro de livros, autores, editoras
 
 ✅ Controle de usuários (alunos, professores, funcionários)
@@ -60,6 +65,7 @@ psql -U postgres -d sgbiblioteca -f database/inserts.sql
 ✅ Relatórios estatísticos
 
 📊 Tabelas Principais
+
 Livros - Informações dos acervos
 
 Autores - Cadastro de autores
@@ -87,18 +93,9 @@ WHERE disponivel = TRUE;
 SELECT * FROM emprestimos 
 WHERE usuario_id = 123 
 AND data_devolucao IS NULL;
-🤝 Contribuição
-Faça um Fork do projeto
-
-Crie uma branch para sua feature (git checkout -b feature/nova-funcionalidade)
-
-Commit suas mudanças (git commit -m 'Adiciona nova funcionalidade')
-
-Push para a branch (git push origin feature/nova-funcionalidade)
-
-Abra um Pull Request
 
 📄 Licença
+
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 👥 Autores
