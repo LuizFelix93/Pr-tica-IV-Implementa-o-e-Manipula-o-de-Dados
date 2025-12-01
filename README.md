@@ -1,94 +1,104 @@
-# Pratica-IV-Implemento-e-Manipulação-de-Dados
-# 📚 Sistema de Gestão de Bibliotecas Universitárias (SGBU)
-
-## 📋 Sobre o Projeto
+📚 Sistema de Gestão de Bibliotecas Universitárias (SGBU)
+📋 Sobre o Projeto
 Implementação completa de um sistema de gestão bibliotecária utilizando PostgreSQL/MySQL, com modelagem normalizada (3FN) e scripts SQL para operações CRUD.
 
-## 🏗️ Modelagem
-- Modelo Entidade-Relacionamento (DER) completo
-- Normalizado até 3ª Forma Normal (3FN)
-- 8 tabelas principais com relacionamentos bem definidos
+🏗️ Modelagem
+Modelo Entidade-Relacionamento (DER) completo
 
-## 🛠️ Tecnologias Utilizadas
-- PostgreSQL 14+ / MySQL 8+
-- SQL (DDL, DML, DQL, DCL)
-- Git e GitHub para versionamento
-- Mermaid.js para documentação
+Normalizado até 3ª Forma Normal (3FN)
 
-## 📁 Estrutura do Projeto
+8 tabelas principais com relacionamentos bem definidos
 
-biblioteca-sgbd/
-├── scripts/
-│ ├── 01_create_database.sql
-│ ├── 02_create_tables.sql
-│ ├── 03_insert_data.sql
-│ ├── 04_select_queries.sql
-│ ├── 05_update_delete.sql
-│ └── 06_views_procedures.sql
+🛠️ Tecnologias Utilizadas
+PostgreSQL 14+ / MySQL 8+
+
+SQL (DDL, DML, DQL, DCL)
+
+Git e GitHub para versionamento
+
+Mermaid.js para documentação
+
+📁 Estrutura do Projeto
+text
+SGBU/
+├── database/
+│   ├── schema.sql        # Criação do banco e tabelas
+│   ├── inserts.sql       # Dados iniciais
+│   ├── queries.sql       # Consultas principais
+│   └── procedures.sql    # Stored procedures
 ├── docs/
-│ ├── 01_minimundo.md
-│ ├── 02_modelo_conceitual.md
-│ ├── 03_modelo_logico.md
-│ ├── 04_verificacao_normalizacao.md
-│ └── 05_der_diagram.md
-├── data/
-│ └── sample_data.csv
-└── README.md
+│   ├── DER.md           # Diagrama ER
+│   └── modelagem.md     # Documentação da modelagem
+└── README.md           # Este arquivo
 
-📊 Modelo de Dados
-8 Tabelas principais: USUARIO, LIVRO, AUTOR, EXEMPLAR, EMPRESTIMO, MULTA, EDITORA, ESCREVE
+🚀 Como Executar
+1. Configuração do Banco
+sql
+-- PostgreSQL
+CREATE DATABASE sgbiblioteca;
+\c sgbiblioteca;
 
-Normalização: 3ª Forma Normal (3FN) verificada
+-- MySQL
+CREATE DATABASE sgbiblioteca;
+USE sgbiblioteca;
+2. Executar Scripts
+bash
+# Executar em ordem:
+psql -U postgres -d sgbiblioteca -f database/schema.sql
+psql -U postgres -d sgbiblioteca -f database/inserts.sql
 
-Relacionamentos: 10+ relações com cardinalidades definidas
+🔍 Principais Funcionalidades
+✅ Cadastro de livros, autores, editoras
 
-Índices: Otimizados para performance
+✅ Controle de usuários (alunos, professores, funcionários)
 
-✨ Funcionalidades Implementadas
+✅ Sistema de empréstimos e devoluções
 
-✅ Criação do banco de dados e tabelas (DDL)
+✅ Controle de multas e reservas
 
-✅ Inserção de dados de exemplo (DML)
+✅ Relatórios estatísticos
 
-✅ Consultas complexas com JOINs e subconsultas (DQL)
+📊 Tabelas Principais
+Livros - Informações dos acervos
 
-✅ Atualização e exclusão de dados com condições
+Autores - Cadastro de autores
 
-✅ Views e Stored Procedures
+Editoras - Cadastro de editoras
 
-✅ Controle de transações e integridade referencial
+Usuários - Alunos, professores, funcionários
 
-🔧 Scripts Disponíveis
-Script	Descrição
+Empréstimos - Controle de retiradas
 
-01_create_database.sql	Criação do banco de dados
-02_create_tables.sql	Criação das tabelas com constraints
-03_insert_data.sql	Povoamento inicial com dados de exemplo
-04_select_queries.sql	Consultas SELECT com diferentes complexidades
-05_update_delete.sql	Comandos UPDATE e DELETE com condições
-06_views_procedures.sql	Views e Stored Procedures úteis
-📚 Documentação Técnica
-Consulte a pasta docs/ para:
+Devoluções - Registro de devoluções
 
-Descrição detalhada do minimundo
+Reservas - Sistema de reservas
 
-Modelo conceitual e lógico
+Multas - Controle de penalidades
 
-Verificação completa das formas normais
+📝 Exemplo de Uso
+sql
+-- Consultar livros disponíveis
+SELECT titulo, autor, ano_publicacao 
+FROM livros 
+WHERE disponivel = TRUE;
 
-Diagrama ER interativo
+-- Ver empréstimos ativos de um usuário
+SELECT * FROM emprestimos 
+WHERE usuario_id = 123 
+AND data_devolucao IS NULL;
+🤝 Contribuição
+Faça um Fork do projeto
 
-🧪 Testes Realizados
-Teste de Integridade: Chaves estrangeiras funcionando
+Crie uma branch para sua feature (git checkout -b feature/nova-funcionalidade)
 
-Teste de Performance: Índices otimizando consultas
+Commit suas mudanças (git commit -m 'Adiciona nova funcionalidade')
 
-Teste de Normalização: Verificação 1FN, 2FN, 3FN
+Push para a branch (git push origin feature/nova-funcionalidade)
 
-Teste de Transações: COMMIT e ROLLBACK funcionais
+Abra um Pull Request
 
 📄 Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-👨‍💻 Autor
-Luiz Felix da Silva Filho
+👥 Autores
+Luiz felix da Silva Filho - Desenvolvimento inicial
