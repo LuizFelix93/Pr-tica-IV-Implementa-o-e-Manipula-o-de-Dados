@@ -16,6 +16,7 @@ Implementação completa de um sistema de gestão bibliotecária utilizando Post
 - Mermaid.js para documentação
 
 ## 📁 Estrutura do Projeto
+
 biblioteca-sgbd/
 ├── scripts/
 │ ├── 01_create_database.sql
@@ -44,6 +45,7 @@ Relacionamentos: 10+ relações com cardinalidades definidas
 Índices: Otimizados para performance
 
 ✨ Funcionalidades Implementadas
+
 ✅ Criação do banco de dados e tabelas (DDL)
 
 ✅ Inserção de dados de exemplo (DML)
@@ -58,6 +60,7 @@ Relacionamentos: 10+ relações com cardinalidades definidas
 
 🔧 Scripts Disponíveis
 Script	Descrição
+
 01_create_database.sql	Criação do banco de dados
 02_create_tables.sql	Criação das tabelas com constraints
 03_insert_data.sql	Povoamento inicial com dados de exemplo
