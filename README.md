@@ -23,7 +23,7 @@ Git e GitHub para versionamento
 Mermaid.js para documentação
 
 📁 Estrutura do Projeto
-
+text
 SGBU/
 ├── database/
 │   ├── schema.sql        # Criação do banco e tabelas
